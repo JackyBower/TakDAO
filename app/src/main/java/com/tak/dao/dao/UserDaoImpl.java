@@ -1,7 +1,6 @@
 package com.tak.dao.dao;
 
 import android.content.Context;
-import android.database.sqlite.SQLiteOpenHelper;
 
 import com.tak.dao.entity.User;
 import com.tak.daocore.dao.impl.BaseDaoImpl;

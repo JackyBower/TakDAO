@@ -2,6 +2,7 @@ package com.tak.dao;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 
 import com.tak.dao.dao.IUserDao;
 import com.tak.dao.dao.UserDaoImpl;
@@ -34,20 +35,23 @@ public class MainActivity extends AppCompatActivity {
         BaseDaoImpl baseDao = dbHelper.getBaseDao(this, User.class);
 
         String id = UUID.randomUUID().toString();
+        long currentTime = System.currentTimeMillis();
+        /*for (int i = 0; i < 10000; i++) {
+            User user = new User();
+            user.setId(i + "");
+            user.setStatus("1");
+            user.setName("test");
+            //保存
+            baseDao.save(user, false);
+        }*/
 
-        User user = new User();
-        user.setId(id);
-        user.setStatus("1");
-        user.setName("test");
-
-        //保存
-        baseDao.save(user, false);
 
         //查看
-        User user1 = (User) baseDao.get(id);
+//        User user1 = (User) baseDao.get(id);
 
         //查询所有
         List<User> userList = baseDao.findAll();
+        Log.e(TAG,"查询数据10000条共耗时：" + (System.currentTimeMillis() - currentTime));
 
         //组装查询参数
         QueryParam param = new QueryParam("status", QueryOperator.EQ, "1");

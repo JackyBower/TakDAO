@@ -45,7 +45,10 @@ public class DBHelper {
      * @param clz
      * @return
      */
-    public BaseDaoImpl getBaseDao(Context context, Class<?> clz) {
+    public BaseDaoImpl getBaseDao(Context context,Class<?> clz) {
+        if (mSQLiteDBHelper == null) {
+            mSQLiteDBHelper = new SQLiteDBHelper(context, getDatabaseName(), getDbVersion(), new Class<?>[]{clz});
+        }
         //获取BaseDaoImpl对象
         BaseDaoImpl baseDao = new BaseDaoImpl(mSQLiteDBHelper, clz);
         //判断是否创建了表

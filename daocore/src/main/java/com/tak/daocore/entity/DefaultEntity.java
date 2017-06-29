@@ -1,7 +1,8 @@
 package com.tak.daocore.entity;
 
-import com.harmonywisdom.framework.library.annotation.Column;
-import com.harmonywisdom.framework.library.annotation.Id;
+
+import com.tak.daocore.annotation.Column;
+import com.tak.daocore.annotation.Id;
 
 import java.io.Serializable;
 

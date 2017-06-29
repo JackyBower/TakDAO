@@ -3,9 +3,9 @@ package com.tak.daocore.db;
 import android.database.sqlite.SQLiteDatabase;
 import android.util.Log;
 
-import com.harmonywisdom.framework.library.annotation.Column;
-import com.harmonywisdom.framework.library.annotation.Id;
-import com.harmonywisdom.framework.library.annotation.Table;
+import com.tak.daocore.annotation.Column;
+import com.tak.daocore.annotation.Id;
+import com.tak.daocore.annotation.Table;
 
 import java.lang.reflect.Field;
 import java.sql.Blob;
