@@ -15,14 +15,14 @@ TakDAO是一个快速&轻量级的Android SQLite ORM映射框架，尽可能的�
   添加依赖
   Gradle：
    ```java
-  compile 'com.tak.daocore:TakDAO:1.0.0'
+  compile 'com.tak.daocore:TakDAO:1.0.1'
   ```
   Maven：
   ```java
   <dependency>
     <groupId>com.tak.daocore</groupId>
     <artifactId>TakDAO</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <type>pom</type>
   </dependency>
    ```
