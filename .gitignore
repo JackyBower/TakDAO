@@ -3,7 +3,11 @@
 /local.properties
 /.idea/workspace.xml
 /.idea/libraries
+/app/build
 .DS_Store
 /build
 /captures
 .externalNativeBuild
+app/libs/
+app/src/main/res/drawable/
+daocore/src/main/res/drawable/
