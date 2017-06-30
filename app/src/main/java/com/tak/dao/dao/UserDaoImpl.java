@@ -17,7 +17,7 @@ public class UserDaoImpl extends BaseDaoImpl<User> implements IUserDao {
 
     public UserDaoImpl(Context context) {
         //通过DBHelper.getInstance()获取getSQLiteDBHelper()对象
-        super(DBHelper.getInstance().getSQLiteDBHelper(), User.class);
+        super(DBHelper.getInstance().getSQLiteDBHelper(context), User.class);
     }
 
     @Override
