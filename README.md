@@ -1,30 +1,24 @@
 # TakDAO
 
-TakDAO是一个快速&轻量级的Android SQLite ORM映射框架，尽可能的简化数据库操作。
+TakDAO是一个Android SQLite ORM映射框架，尽可能的简化数据库操作。
 宗旨在使其尽可能容易地与SQLite数据库一起工作，同时仍然能够实现原始SQL的强大
 功能和灵活性，可以轻松地读取和写入数据，而不会有一堆凌乱的SQL字符串。
-
-
-## 特征
-1. TakDAO简化了数据库的增删改查操作.
-2. 通过注解的方式进行数据库对象映射.
-3. 也可以自定义实现复杂的业务逻辑处理.
 
 
 ## 使用示例
   添加依赖
   Gradle：
    ```java
-  compile 'com.tak.daocore:TakDAO:1.0.1'
+   compile 'com.tak.daocore:TakDAO:1.0.1'
   ```
-  Maven：
-  ```java
-  <dependency>
-    <groupId>com.tak.daocore</groupId>
-    <artifactId>TakDAO</artifactId>
-    <version>1.0.1</version>
-    <type>pom</type>
-  </dependency>
+Maven：
+   ```java
+   <dependency>
+     <groupId>com.tak.daocore</groupId>
+     <artifactId>TakDAO</artifactId>
+     <version>1.0.1</version>
+     <type>pom</type>
+   </dependency>
    ```
 1. 基本操作
 
